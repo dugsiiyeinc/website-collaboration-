@@ -82,6 +82,50 @@ body{
     position: relative;
     top: 80px;
 }
+.form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.all-list{
+    background-color: aliceblue;
+        padding: 30px 40px;
+}
+
+
+.lists{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.lists .inputs,.selections{
+    border: 1px solid black;
+    width: 100%;
+    margin-left: 10px;
+    padding: 5px;
+    align-content: center;
+    display: flex;
+}
+.lists input,select{
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+.inputs, .selections .fa-solid{
+    font-size: 1.5em;
+}
+.fa-solid .child{
+    
+}
+
+
 
 
 
