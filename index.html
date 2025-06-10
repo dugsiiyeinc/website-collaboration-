@@ -15,16 +15,33 @@
             
                 <nav class="main">
                     <div class="logos"><img src="https://www.tooplate.com/templates/2095_level/img/logo.png" alt="logo png"><h1>level</h1></div>
-                    <!-- <button id="menu-toggle">☰</button> -->
-                    <Ul class="nav-sec">
+                    <button id="menu-toggle">☰</button>
+                    <ul class="nav-sec">
                         <li><a href="#our-home" >home</a></li>
                         <li><a href="#our-portfolio">porfolio</a></li>
                         <li><a href="#our-blogs">blogs</a></li>
                         <li><a href="#our-contacts">contact us</a></li>
-                    </Ul>
+                    </ul>
                     
                 </nav>
         </div>
     </header>
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navSec = document.querySelector('.nav-sec');
+
+    menuToggle.addEventListener('click', function () {
+        navSec.classList.toggle('active');
+
+        // Toggle icon: ☰ ↔ ✖
+        if (navSec.classList.contains('active')) {
+            menuToggle.textContent = '✖'; // show close icon
+        } else {
+            menuToggle.textContent = '☰'; // show menu icon
+        }
+    });
+});
+    </script>
 </body>
 </html>
