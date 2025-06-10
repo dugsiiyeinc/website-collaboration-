@@ -7,4 +7,5 @@ body, html {
     background-image: url(me2.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
   }
