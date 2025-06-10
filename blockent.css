@@ -5,4 +5,5 @@ body, html {
   }
   .hero-container{
     background-image: url(me2.jpg);
+    background-size: cover;
   }
