@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- header section -->
+        
+    <header class="all-head">
+        
+        <div class="container"> 
+            
+                <nav class="main">
+                    <div class="logos"><img src="https://www.tooplate.com/templates/2095_level/img/logo.png" alt="logo png"><h1>level</h1></div>
+                    <button id="menu-toggle">☰</button>
+                    <ul class="nav-sec">
+                        <li><a href="#our-home" >home</a></li>
+                        <li><a href="#our-portfolio">porfolio</a></li>
+                        <li><a href="#our-blogs">blogs</a></li>
+                        <li><a href="#our-contacts">contact us</a></li>
+                    </ul>
+                    
+                </nav>
+        </div>
+    </header>
+
+    <!-- main section -->
+
+    <section class="forms-back">
+        
+        <form action="" class="form-input container">
+            <div class="all-list">
+                <div class="lists">
+                    <div class="inputs">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="Type Your Destination">
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input name="check in" type="date" placeholder="check in">
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date" name="chick out" placeholder="chick out">
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-user"></i>
+                        <select>
+                            <option >Adult</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-user child"></i>
+                        <select>
+                            <option >Children</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                    </div>
+                    <div class="inputs">
+                        <i class="fa-solid fa-bed"></i>
+                        <select>
+                            <option >Room</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                            <option >4</option>
+                            <option >5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="">
+                    <button class="batn" >CHECK AVAILABILATY</button>
+                    </div>
+                <div class="qorals">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <a href="#">Need Help?</a>
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- section 2 levels article -->
+    <section class="all-levels " >
+        <div class="backg">
+            <div class="helps-part">
+                <h1>We are here to help you?</h1>
+                <p>Subscribe to get our newsletters</p>
+                <button>Subscribe Newletters</button>
+            </div>
+        </div>
+    </section>
+    <section class="level-read"> 
+        <div class=" articles container ">
+            <div class="articles-card">
+                <i class="fa-solid fa-gavel"></i>
+                <h2>Level HTML Template by Tooplate website</h2>
+                <p>You are allowed to download, edit and use this template for your business or client websites.</p>
+                <a href="#">Continue reading...</a>
+            </div>
+            <div class="articles-card">
+                <i class="fa-solid fa-plane-departure"></i>
+                <h2>Level HTML Template by Tooplate website</h2>
+                <p>You are allowed to download, edit and use this template for your business or client websites.</p>
+                <a href="#">Continue reading...</a>
+            </div>
+            <div class="articles-card">
+                <i class="fa-solid fa-futbol"></i>
+                <h2>Level HTML Template by Tooplate website</h2>
+                <p>You are allowed to download, edit and use this template for your business or client websites.</p>
+                <a href="#">Continue reading...</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navSec = document.querySelector('.nav-sec');
+
+    menuToggle.addEventListener('click', function () {
+        navSec.classList.toggle('active');
+
+        // Toggle icon: ☰ ↔ ✖
+        if (navSec.classList.contains('active')) {
+            menuToggle.textContent = '✖'; // show close icon
+        } else {
+            menuToggle.textContent = '☰'; // show menu icon
+        }
+    });
+});
+    </script>
+</body>
+</html>
