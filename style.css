@@ -81,6 +81,8 @@ body{
     background-repeat: no-repeat;
     position: relative;
     top: 80px;
+    display: block;
+    z-index: -1;
 }
 .form-input{
     display: flex;
@@ -164,6 +166,43 @@ body{
     
 }
 
+.all-levels{
+    
+    /* display: block; */
+     margin-top: 4.75rem;
+}
+.backg{
+    background-color: #ee5057;
+    clip-path: polygon(0 0,100% 0, 100% 80%, 50% 100%,0 80%);
+    padding: 50px 0;
+    
+}
+.helps-part{
+    padding-top: 50px;
+    text-align: center;
+}
+.helps-part h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ffff;
+}
+.helps-part p{
+    margin-bottom: 1.5625rem;
+    color: #ffff;
+}
+.helps-part button{
+    font-size: 0.8126rem;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px  solid white;
+}
+.helps-part button:hover{
+    background-color: whitesmoke;
+    color: #ee5057;
+        transition: all 0.4s ease;
+}
 
 
 
