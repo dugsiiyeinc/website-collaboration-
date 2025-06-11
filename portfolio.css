@@ -12,9 +12,15 @@ body{
     width: 1100px;
     margin: 0 auto;
 }
+
+.portfolios{
+    background:rgb(244, 244, 244);
+    padding: 80px 50px;
+}
 .portfolio{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
 }
 .portfolio-left{
     grid-column: 1 / span 2;
@@ -40,7 +46,7 @@ body{
 }
 .portfolio-left .content{
     width: 100%;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     
 }
 .portfolio-left .content .qorals{
@@ -55,4 +61,39 @@ body{
     cursor: pointer;
     font-weight: 600;
     width: 100%;
+}
+.portfolio-right{
+    margin: 0 15px;
+    background-color: rgb(255, 255, 255);
+}
+.portfolio-right .topic{
+    background-color: #ee5057;
+    padding: 15px 20px;
+}
+.topic h2{
+    font-size: 20.8px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 500;
+}
+.topic p{
+    font-size: 13px;
+    color: white;
+    font-weight: 300;
+    /* line-height: 24.7px; */
+    font: lighter;
+}
+.portfolio-right .world-view{
+    margin: 21px 20px;
+    display: flex;
+    align-items: center;
+    background:rgb(244, 244, 244);
+
+}
+.world-view a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
 }
