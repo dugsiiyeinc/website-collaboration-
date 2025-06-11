@@ -16,5 +16,8 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 3rem;
+    min-height: 100%;
+    gap: 2rem;
 
   }
