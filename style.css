@@ -84,30 +84,37 @@ body{
 }
 .form-input{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    justify-items: center;
+    /* justify-items: center; */
     align-items: center;
     min-height: 80vh;
+
 }
 .all-list{
     background-color: aliceblue;
         padding: 30px 40px;
+        width: 100%;
+        
 }
 
 
 .lists{
-    display: flex;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin-bottom: 15px;
+    /* min-width: 900px; */
+    width: 100%;
+    gap: 15px;
 
 }
-.lists .inputs,.selections{
+
+.inputs{
     border: 1px solid black;
-    width: 100%;
     margin-left: 10px;
-    padding: 5px;
-    align-content: center;
+    padding: 10px;
+    /* align-content: center; */
     display: flex;
+    gap: 15px;
 }
 .lists input,select{
     background: transparent;
@@ -115,15 +122,48 @@ body{
     text-decoration: none;
     outline: none;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
 }
 
-.inputs, .selections .fa-solid{
+.inputs,.fa-solid{
     font-size: 1.5em;
+    color: #ee5057;
 }
-.fa-solid .child{
+.inputs .child{
+    font-size: 1em;
+}
+.batn{
+    padding: 15px  ;
+    margin-left: 10px;
+    font-size: 0.7rem;
+    background-color: #ee5057;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+.batn:hover{
+    cursor: pointer;
+    background-color: #911f10;
+}
+.qorals{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.qorals h2{
+    font-size: 13px;
+    font-weight:400 ;
+    padding-left: 10px;
+}
+.qorals a{
+    color: #ee5057;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight:400 ;
     
 }
+
 
 
 
@@ -174,7 +214,7 @@ body{
         width: 180px;
         height: 172.792px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) 
-      }
+    }
     .nav-sec li{
         padding:  0.75rem 0.9375rem ;
     }
@@ -182,8 +222,37 @@ body{
         width: 149.333px;
         height: 19.128px;
     }
+    .lists {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        grid-template-rows: 1fr  1fr;
+        width: 100%;
 
 }
 
 
 
+}
+
+@media (max-width:768px){
+    .lists {
+        grid-template-columns: 1fr ;
+        gap: 15px;
+        /* grid-template-rows: 1fr  1fr; */
+        /* width: 100%; */
+        height:fit-content;
+
+}
+.forms-back{
+    height: 700px;
+}
+.form-input{
+    min-height: 70vh;
+}
+.batn{
+    width: 98%;
+    
+}
+
+
+}
