@@ -26,3 +26,13 @@ body, html {
     flex: 1;
     color: #333;
   }
+  .left-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    
+  }
+  .left-text h2{
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-top: 0.5rem;
+  }
