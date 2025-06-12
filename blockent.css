@@ -74,6 +74,7 @@ body, html {
     height: 100vh;
     position: relative;
     overflow: auto;
+    margin-top: 80px;
   }
   .overlay{
     background-color: rgba(255, 255, 255, 0.85);
@@ -189,6 +190,46 @@ body, html {
   background-color: #c0392b;
  }
  @media (max-width: 1024px) {
+
+   #menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color:#ee5057;
+        margin: 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        border: 1px solid #ee5057;
+        padding: 4px 12px;
+    }
+
+    .main{
+        height: 80px;
+    }
+    .nav-sec{
+        display: none;
+    }
+    .nav-sec.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;  
+        background-color: rgb(255, 255, 255);
+        width: 180px;
+        height: 172.792px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) 
+    }
+    .nav-sec li{
+        padding:  0.75rem 0.9375rem ;
+    }
+    .nav-sec a{
+        width: 149.333px;
+        height: 19.128px;
+    }
   .overlay {
     flex-direction: column;
     align-items: flex-start;

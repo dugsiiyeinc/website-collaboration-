@@ -83,5 +83,23 @@
             <footer class="footer">
                 <p>Copyright © 2025 Your Company - Designed by: <a href="https://www.tooplate.com" target="_blank">HODAN IBRAHIM OSMAN</a></p>
             </footer>
+
+             <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navSec = document.querySelector('.nav-sec');
+
+    menuToggle.addEventListener('click', function () {
+        navSec.classList.toggle('active');
+
+        // Toggle icon: ☰ ↔ ✖
+        if (navSec.classList.contains('active')) {
+            menuToggle.textContent = '✖'; // show close icon
+        } else {
+            menuToggle.textContent = '☰'; // show menu icon
+        }
+    });
+});
+    </script>
 </body>
 </html>
