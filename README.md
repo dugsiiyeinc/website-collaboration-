@@ -43,11 +43,9 @@ The project highlights:
 ---
 
 
-## ✨ Deployment Preview
+## 🚀 Deployment Preview
 
-
-[🌐 website-collaborations-c2ho.vercel.app]
-
+🌐 [website-collaborations.vercel.app](https://website-collaborations-c2ho.vercel.app)
 
 
 
