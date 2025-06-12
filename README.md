@@ -47,7 +47,7 @@ The project highlights:
 
 Here’s a screenshot of the live deployed version of the site:
 
-[🌐 website-collaborations.vercel.app](/)
+[🌐 website-collaborations-c2ho.vercel.app](/)
 
 
 
