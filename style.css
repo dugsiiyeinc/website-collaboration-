@@ -249,6 +249,19 @@ body{
 }
 
 
+.foot{
+    background-color: rgb(57, 57, 53);
+    padding: 30px ;
+    text-align: center;
+    font-size:0.8rem ;
+    color: white;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.foot span{
+    color: #ee5057;
+}
+
 
 
 

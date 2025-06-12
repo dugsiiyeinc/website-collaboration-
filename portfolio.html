@@ -8,7 +8,23 @@
 </head>
 <body>
     <!-- header section -->
-     
+      <header class="all-head">
+        
+        <div class="container"> 
+            
+                <nav class="main">
+                    <div class="logos"><img src="https://www.tooplate.com/templates/2095_level/img/logo.png" alt="logo png"><h1>level</h1></div>
+                    <button id="menu-toggle">☰</button>
+                    <ul class="nav-sec">
+                        <li><a href="index.html" >home</a></li>
+                        <li><a href="portfolio.html">portfolio</a></li>
+                        <li><a href="#our-blogs">blogs</a></li>
+                        <li><a href="#our-contacts">contact us</a></li>
+                    </ul>
+                    
+                </nav>
+        </div>
+    </header>
 
     <!-- porfolio section -->
     <section class="portfolios ">
@@ -70,6 +86,29 @@
         <source src="video/4957756-hd_1920_1080_25fps.mp4" type="video/mp4">
           </video>
     </section>
+    <!-- footer section -->
+        
     <footer class="foot">Copyright © 2025 Your Company - Design: <span>Apdisamad Mahamed</span></footer>
+
+
+ <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navSec = document.querySelector('.nav-sec');
+
+    menuToggle.addEventListener('click', function () {
+        navSec.classList.toggle('active');
+
+        // Toggle icon: ☰ ↔ ✖
+        if (navSec.classList.contains('active')) {
+            menuToggle.textContent = '✖'; // show close icon
+        } else {
+            menuToggle.textContent = '☰'; // show menu icon
+        }
+    });
+});
+    </script>
+
+
 </body>
 </html>
