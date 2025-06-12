@@ -1,0 +1,208 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .hero-container{
+    background-image: url(https://www.tooplate.com/templates/2095_level/img/img-03.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+  }
+  .overlay{
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem;
+    min-height: 100%;
+    gap: 2rem;
+   
+
+  }
+  .left-text{
+    flex: 1;
+    color: #333;
+  }
+  .left-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    
+  }
+  .left-text h2{
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-top: 0.5rem;
+  }
+.blog-cards{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0,0, 0.1);
+
+}
+.card img{
+  width: 40%;
+  object-fit: cover;
+
+}
+.card-content{
+  padding: 1rem;
+
+}
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
+}
+.card-content a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.reverse-diagonal{
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  clip-path: polygon(0 100px , 100% 0, 100% 100%, 0 100%);
+  margin-top: -50px;
+  z-index: 1;
+}
+.contact-section{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  background: #f5f5f5;
+  padding: 0;
+}
+.map-container{
+  flex: 1;
+  min-height: 500px;
+}
+.form-container{
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+ form{
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+ }
+ form input ,form textarea{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+ }
+ form button{
+  background-color: #e74c3c;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+
+ }
+ form button:hover {
+  background-color: #c0392b;
+ }
+ @media (max-width: 1024px) {
+  .overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .left-text, .blog-cards {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .left-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .map-container,
+  .form-container {
+    width: 100%;
+    flex: unset;
+    min-height: 300px;
+  }
+
+  .reverse-diagonal {
+    clip-path: polygon(0 80px, 100% 0, 100% 100%, 0% 100%);
+    height: 100px;
+    margin-top: -30px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay {
+    padding: 1rem;
+  }
+
+  .left-text h1 {
+    font-size: 2rem;
+  }
+
+  .left-text h2 {
+    font-size: 1.2rem;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  .reverse-diagonal {
+    clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%);
+    height: 80px;
+    margin-top: -20px;
+  }
+}
