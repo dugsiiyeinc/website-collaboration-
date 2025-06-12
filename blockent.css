@@ -57,5 +57,9 @@ body, html {
 
 }
 .card-content{
-  
+  padding: 1rem;
+
+}
+.card-content h3 {
+  margin: 0 0 0.5rem 0;
 }
