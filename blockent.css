@@ -3,6 +3,70 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
   }
+  .container{
+    max-width:1140px;
+    margin: 0 auto;
+    padding:0 15px
+}
+.all-head{
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-content: center;
+    align-items: center;
+    min-height: 80px;
+    flex-wrap: wrap;
+    
+}
+.nav-sec{
+    display: flex;
+    list-style: none;
+
+}
+
+.nav-sec li{
+    padding: 1.85rem 2.185rem;
+}
+.nav-sec a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-sec :hover{
+    background: #ee5057;
+    color: white;
+
+}
+.logos {
+    display: flex;
+    align-items: center;
+    
+    
+}
+.logos h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+#menu-toggle{
+    display: none;
+}
+.menu-toggle.open::before{
+    content: "✖";
+    display: none;
+    
+}
+
   .hero-container{
     background-image: url(https://www.tooplate.com/templates/2095_level/img/img-03.jpg);
     background-size: cover;
