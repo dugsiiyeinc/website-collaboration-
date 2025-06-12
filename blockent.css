@@ -107,3 +107,15 @@ body, html {
   border: 1px solid #ccc;
   font-size: 1rem;
  }
+ form button{
+  background-color: #e74c3c;
+  color: white;
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+  
+ }
