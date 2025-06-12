@@ -117,5 +117,8 @@ body, html {
   cursor: pointer;
   border-radius: 4px;
   transition: background 0.3s;
-  
+
+ }
+ form button:hover {
+  background-color: #c0392b;
  }
