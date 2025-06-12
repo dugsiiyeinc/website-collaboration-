@@ -63,3 +63,8 @@ body, html {
 .card-content h3 {
   margin: 0 0 0.5rem 0;
 }
+.card-content a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+}
