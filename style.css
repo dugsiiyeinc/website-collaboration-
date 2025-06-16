@@ -326,7 +326,11 @@ body{
 
     }
     .all-list{
-        margin-top: 50px;
+        margin-top: -50px;
+        position: relative;
+    }
+    .form-input{
+        min-height: 60vh;
     }
 
 
