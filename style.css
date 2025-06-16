@@ -327,7 +327,7 @@ body{
 
     }
     .all-list{
-        margin-top: -50px;
+        margin-top: 50px;
         position: relative;
     }
     .form-input{
@@ -362,6 +362,9 @@ body{
 }
 .articles-card{
     width: 100%;
+}
+.all-list{
+    margin-top: 50px;
 }
 
 
